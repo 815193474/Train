@@ -1,0 +1,165 @@
+Stream
+流表面上看起来与集合类似，允许你转换和检索数据。然而，两者却有显著的不同
+1.流不存储元素。它们存储在底层的集合或者按需生成
+2.流操作不改变他们的源数据。例如filter方法不会从一个新流中删除元素，而是生成一个不包含特定元素的新流，
+3.如果可能的话，Stream操作可能是延迟执行的。这意味着知道需要结果的时候，方法才会执行。例如，如果你只需要找到前五个长单词而不是全部，filter方法在找到第五个长单词后就停止执行。所以你甚至可以拥有一个无穷流。
+count = words.stream().filter(w->w.length()>10).count();//filter方法返回一个新流，仅包含长度大于12的单词。
+Collection接口的stream方法可以将任何集合转化为Stream.如果是数组则可以使用静态方法Stream.of方法将它转化为Stream.
+Stream.of()//可以接受数组、可变长度参数
+Stream.empty()//创建一个不含元素的Stream
+Stream.generate()//用来创建无限Stream的静态方法
+Stream.generate(()->"echo");//无限常量
+Stream.generate(Math::random);//无限随机数
+Stream.iterate(BigInteger.Zero,n->n.add(BigInteger.ONE));//无限的自然数 0,1,2,3,4
+Pattern类生成Stream，Pattern.compile("\\PL+").splitAsStream(contents);//按照正则表达式对其进行分割
+Files类,Files.lines(path)//返回文件流
+
+
+filter、map和flatMap方法
+filter转换生成一个匹配一定条件的新流
+map转换生成一个经过自定义方式转换（比如全部转换为小写字母）的新流。map转换中的函数将会作用于每一个元素
+flatmap方法相比于map方法，会将Stream<Stream<?>> 这种类型的结果合并成为Stream<?>,减少了Stream层级。
+
+
+提取子流和组合流
+stream.limit(n)会返回一个包含n个元素的新流（如果原始流的长度小于n，则返回原始流）
+stream.skip(n)会返回跳过n个元素的新流
+stream.concat()会将两个流连接起来，要求第一个流不是无限的，否则第二个永远不会被连接
+
+
+其他流转换
+distinct()方法会抑制重复元素，即使重复元素不相邻。
+Stream排序，对于元素实现了Comparable接口的流可以直接使用sorted方法
+其他的可以接受一个Comparator对象，比如sorted(Comparator.comparing(String::length).reversed())
+peek方法生成一个有着相同元素的新流，但是每当元素被检索时就会被调用一次stream.peek(System.out::println)//可以用来调试监视
+
+
+简单归约reduction
+意思是将流转化为能够在程序中使用的非流值，比如说count方法
+Optional<String> largest = words.max(String::compareToIgnoreCase);//max方法根据条件返回最大值，返回的Optional对象有效的避免了空指针问题
+System.out.println("largest:"+largest.getOrElse(""));
+
+
+findFirst方法返回非空集合的第一个值，一般搭配filter使用
+Optional<String> startsWithQ = words.filter(s->s.startsWith("Q")).findFirst();
+findAny会返回所有的元素
+anymatch会判断流中是否含有匹配元素，而不需要使用filter方法。
+
+
+Optional类型
+Optional<T>对象是一个T类型对象或者空对象的封装。
+optionalString.orElse("");//没有值的时候，直接使用“”默认值
+optionalString.orElseGet(()->System.getProperty("user.dir"));//没有值的时候通过方法来计算默认值
+optionalString.orElseThrow(IllegalStateException::new);//当没有值的时候抛出异常
+optionalValue.ifPresent(v->Process v);//ifPresent方法接受一个函数，如果optional值存在的话，他会被传递给函数，否则不进行任何处理
+例如添加一个值到集合中
+optionalValue.ifPresent(v->result.add(v));
+但值得注意的是不要为了用Optional而用，当value不可能为空的时候，可以直接调用该value，而不是转化为optional对象
+创建Optional类型值
+optional.of(obj),optional.empty()//分别创建obj或者null值的optional对象，或者通过option.ofNullable()方法综合前面两个方法，返回obj或者为空
+optional<U> result = s.f().flatmap(T::g);//当s.f()返回一个T对象的时候，会调用flatmap转换为U对象，否则会返回空的Option<U>
+
+
+收集结果（collect方法）
+stream.forEach(System.out.println);//将结果进行打印
+在并行流上，foreach方法可以任意顺序遍历元素，如果想要按照流的顺序处理元素，那么可以调用forEachOrdered()方法。当然这会放弃并行计算所能带来的好处
+stream.toArray(String::new);//返回相应类型的数据结构
+stream.collect(Collectors.toList());//返回数组列表
+stream.collect(Collectors.toSet());//返回set类型
+或者stream.collect(Collectors.toCollection(TreeSet::new));//控制得到那种类型的set
+String s = stream.collect(Collectors.joing());//对stream里面的内容进行拼接
+String s = stream.collect(Collections.joing(","));//元素之间插入分隔符
+String result = stream.map(Object::toString).collect(Collectors.joing(","));//先将对象转化为字符串，然后再进行拼接
+可以使用summarizing(Int|Long|Double)来统计结果的总和，平均值，最大值，最小值，生成一个SummaryStatistics类型结果
+Stream<Double> stream = Stream.generate(Math::random).limit(1000);//随机生成1000个double类型数据
+DoubleSummaryStatistics summary = stream.collect(Collectors.summarizingDouble(Double::doubleValue));//对数据进行统计
+System.out.println(summary.getAverage()+","+summary.getMax()+","+summary.getMin()+","+summary.getSum());//显示统计结果
+
+
+将结果收集到map中
+Stream<Person> people;
+Map<Integer,String> idToName = people.collect(Collectors.toMap(Person::getId,Person::getName));//在id不冲突的时候可以调用
+
+
+Stream<Locale> locales = Stream.of(Locale.getAvailableLocales());
+Map<String,String> languageNames = locales.collect(
+Collectors.toMap(
+Locale::getDisplayCountry,
+Locale::getDisplayLanguage,
+(exist,newValue)->exist));//解决冲突用的，当键值冲突时，使用存在的值
+languageNames.forEach((x,y)->System.out.println(x+","+y));
+
+
+Map<String,Set<String>> languageNames = locales.collect(
+Collectors.toMap(
+Locale::getDisplayCountry,
+l ->Collections.singleton(l.getDisplayLanguage()),
+(a,b)->{
+Set<String> strings = new HashSet<>(a);
+strings.addAll(b);
+return strings;
+}));
+
+
+分组和切片
+// groupingBy分组
+Map<String,List<Locale>> countryToLocales = locales.collect(Collectors.groupingBy(Locale::getDisplayCountry));
+// partitioningBy相比于groupingBy更适合返回值为Boolean类型的函数分组，效率更高
+Map<Boolean,List<Locale>> englishAndOtherLocales = locales.collect(
+Collectors.partitioningBy(l->l.getLanguage().equalsIgnoreCase("en")));//区分语言环境是否为英语
+
+下游收集器
+groupingBy方法差生一个值为列表的map对象。如果想以某种方式处理这些对象，可以提供一个下游（downStream）收集器.
+Stream<Locale> locales = Stream.of(Locale.getAvailableLocales());
+Map<String,Long> countryToLocaleCounts = locales.collect(groupingBy(Locale::getCountry,counting()));//counting方法返回所收集元素的总个数
+//计算每一个国家有多少语言
+还有summing方法，返回求和结果，maxBy,minBy产生最大、最小值，mapping可以构建另一个收集器
+Map<String,Optional<String>> stateToLongestCityName = cities.collect(groupingBy(City::getState,mapping(City::getName,maxBy(Comparator.comparing(String::length)))));//先按州进行分组，再在州内按照城市的名称的最大长度进行规约
+
+
+归约操作
+reduce方法是用来计算流中某个值的一种通用机制。最简单的形式是使用一个二元函数，从前两个元素开始不断将其应用到流中的其他元素上，
+List<Integer> integers = new ArrayList<Integer>();
+for(int i=0;i<20;i++){
+integers.add(new Random().nextInt(100));
+}
+Optional<Integer> sum = integers.stream().reduce((x,y)->x+y);//使用reduce进行求和
+reduce归约操作为v1 op v2 op v3 op v4 ... ,对于满足交换律的操作会非常高效。对于求sum(求和)、product(乘积)、string concatenation(字符串拼接)、maximum(求最大值)和minimum(求最小值)、set union(求集和并集)和intersection(求集合交集).比较有用，而对减法无效。例如 (6-3)-2 不等于 6-(3-2)
+当结果类型和数据类型不一致时，需要提供一个累加器函数
+int result = words.reduce(0,(total,word)->total+word.length(),(total1,total2)->total1+total2);
+//其中0是初始值，第二个函数是累加器函数，在并行计算时会被重读调用形成多个累加值，最后一个函数进行累加得出结果。
+
+
+基本类型流
+Stream库提供了IntStream、LongStream、DoubleStream类型，其他基本类型可以使用相近的类型
+IntStream.of或是Arrays.stream可以创建IntStream流
+当有一个对象流的时候，可以使用mapToInt,mapToLong,mapToDouble方法将其抓华为基本数据类型流
+Stream<String> words =...;
+IntStream lengths = words.mapToInt(String::length);
+讲一个基本类型刘转化为对象流，可以使用boxed方法；
+Stream<Integer> integers = IntStream.range(0,100).boxed();
+基本类型流和对象流的区别
+1.toArray返回基本类型
+2.OPtional类型结果返回OPtionalInt、OptionalLong、OptionalDouble类型，其没有get方法，而是使用getAsInt。。。；
+3.存在sum、average、max、min方法，而对象流没有
+4.SummaryStatistics方法产生IntSummaryStatistics...对象，可以获最大、最小、平均等结果。
+
+
+并行流
+获得并行流的方法
+使用Collection.parallelStream();  Stream<String> parallelWords = words.parallelStream();
+或者parallel方法可以将串行流转成并行流 Stream<String> parallelWords = Stream.of(wordArray).parallel();
+只要终止方法执行时流处于并行模式，所有延迟执行的流操作就会被并行执行。
+当流操作以并行形式运行时，要求应当返回以串行运行时结果相同，重要的是操作是无状态的，可以以任意顺序执行。
+有一个反例：
+int[] shortwords = new int[12];
+words.parallelStream().foreach(s->{if(s.length<12)shortwords[s.length]++});//竞争条件，每次运行都会得到不同的总数，且每次都是错误的
+System.out.println(Arrays.toString(shortwords));
+因为传递给foreach的函数将在多个线程中并发运行，每次都会更新共享数组。
+要求确保传递给并行流操作的函数都是线程安全的，实现这个目标的最好方式就是原理可变状态
+Map<Integer,Long> shortWordCounts = words.parallelStream().filter(s->s.length<10).collect(groupingBy(String::length,counting()));
+默认情况下来自有序集合（数组和列表）、范围、生成器、迭代器或调用Stream.sorted所生成的流都是有序的，结果按原先元素的顺序累加，是完全可预测的，如果将同一个操作运行两次，将会得到一样的结果。
+当不考虑顺序的时候，通过调用Stream.unordered方法，可以对流进行并发处理，例如使用limit方法，在仅需要流中的任意n个元素而不关心内容时，可以调用
+Stream<String> sample = words.parallelStream().unordered().limit(n);
+在之前学习过将结果收集到map中，对映射进行合并的代价很昂贵，所以可使用Collectors.groupingByConcurrent方法使用一个共享的并发映射。但是映射值得顺序无法得到保证
+对于不依赖于顺序的downStream收集起来说，是很高效的，比如counting，sum等方法

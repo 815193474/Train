@@ -27,8 +27,9 @@ public class CreateStreams {
     }
 
   public static void main(String[] args) throws IOException {
-    //
+    // Path 是接口类 Paths 是接口实现类
     Path path = Paths.get("F:\\vscode_space\\data.sql");
+    // Files.readAllBytes() 底层也是InputStream 实现的
       String content = new String(Files.readAllBytes(path) , StandardCharsets.UTF_8);
       Stream<String> words = Stream.of(content.split("\\PL+"));
       show("words",words);
