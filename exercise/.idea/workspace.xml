@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d35d4f-7d41-4dd4-a72e-41712499ef10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/Stream.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/baseothers/Welcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/DownstreamCollectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabase/basestream/CountLongWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/CountLongWords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,56 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CountLongWords.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="39" column="51" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/Stream.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="2808">
+              <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -84,15 +42,22 @@
     <findStrings>
       <find>&amp;&amp;</find>
       <find>!=</find>
+      <find>fina</find>
+      <find>size</find>
+      <find>&quot;true&quot;</find>
+      <find>lndex</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>||</replace>
       <replace>==</replace>
+      <replace>true</replace>
+      <replace>Index</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\Windows7安装数据\IDEA_space\exercise</dir>
       <dir>F:\Windows7安装数据\IDEA_space\exercise\src\p2</dir>
+      <dir>F:\Windows7安装数据\IDEA_space\Train\exercise\src\main\java\javabase</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -129,10 +94,14 @@
         <option value="$PROJECT_DIR$/src/main/java/javabase/basetype/shorttype.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/basetype/Shorttype.java" />
         <option value="$PROJECT_DIR$/src/main/java/package01/Down.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CountLongWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/Stream.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/DownstreamCollectors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/baseothers/Welcome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java" />
       </list>
     </option>
   </component>
@@ -143,14 +112,16 @@
     <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1PdCxK5TgrzCkq2ecf4eUyPHGv8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,16 +162,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javabase" type="462c0819:PsiDirectoryNode" />
-              <item name="basestream" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javabase" type="462c0819:PsiDirectoryNode" />
-              <item name="basetype" type="462c0819:PsiDirectoryNode" />
+              <item name="javaString" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise" type="b2602c69:ProjectViewProjectNode" />
@@ -223,7 +185,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -242,13 +204,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CreateStreams">
-    <configuration name="CollectingIntoMaps$Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.basestream.CollectingIntoMaps$Person" />
+  <component name="RunManager" selected="Application.StringAPIs">
+    <configuration name="BaseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javaString.BaseString" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.basestream.*" />
+          <option name="PATTERN" value="javabase.javaString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -256,8 +218,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountLongWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.basestream.CountLongWords" />
+    <configuration name="CollectingIntoMaps$Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.basestream.CollectingIntoMaps$Person" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
@@ -282,12 +244,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shorttype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.basetype.Shorttype" />
+    <configuration name="StringAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javaString.StringAPIs" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.basetype.*" />
+          <option name="PATTERN" value="javabase.javaString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,12 +257,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shuang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="p2.Shuang" />
+    <configuration name="Welcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.baseothers.Welcome" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="p2.*" />
+          <option name="PATTERN" value="javabase.baseothers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,11 +272,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreateStreams" />
+        <item itemvalue="Application.StringAPIs" />
+        <item itemvalue="Application.BaseString" />
         <item itemvalue="Application.CollectingIntoMaps$Person" />
-        <item itemvalue="Application.CountLongWords" />
-        <item itemvalue="Application.Shorttype" />
-        <item itemvalue="Application.Shuang" />
+        <item itemvalue="Application.Welcome" />
+        <item itemvalue="Application.CreateStreams" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +321,10 @@
       <workItem from="1597031772290" duration="4199000" />
       <workItem from="1597377163730" duration="602000" />
       <workItem from="1597395945006" duration="1037000" />
-      <workItem from="1597461741200" duration="19047000" />
+      <workItem from="1597461741200" duration="19168000" />
+      <workItem from="1597564762623" duration="6203000" />
+      <workItem from="1597626677847" duration="3040000" />
+      <workItem from="1597712434732" duration="16965000" />
     </task>
     <task id="LOCAL-00001" summary="8.15练习">
       <created>1597491364233</created>
@@ -368,17 +333,23 @@
       <option name="project" value="LOCAL" />
       <updated>1597491364233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="8.15练习">
+      <created>1597502254440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597502254440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84360000" />
+    <option name="totallyTimeSpent" value="110689000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,15 +359,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23754153" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2538941" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.14119601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866043" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.28504673" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.049833886" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.054817274" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -464,6 +435,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -679,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="622" selection-start-line="622" selection-end-line="622" />
-          <folding>
-            <element signature="e#22821#22822#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/stream/ReferencePipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -727,41 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1049" column="31" selection-start-line="1049" selection-start-column="31" selection-end-line="1049" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/Stream.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -776,6 +716,86 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/DownstreamCollectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/baseothers/Welcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/StringJoiner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+          <folding>
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4806">
+          <caret line="1152" column="15" selection-start-line="1152" selection-start-column="15" selection-end-line="1152" selection-end-column="15" />
+          <folding>
+            <element signature="e#22786#22787#0" expanded="true" />
+            <element signature="e#22821#22822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -845,6 +865,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: com.alibaba:fastjson:1.2.70</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
