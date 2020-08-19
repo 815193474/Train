@@ -1,4 +1,4 @@
-package javabase.javaString;
+package javabase.javacoreI;
 
 /**
  * @Author luoguanzhong @Data 2020-08-18 11:50

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11d35d4f-7d41-4dd4-a72e-41712499ef10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/baseothers/Welcome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/DownstreamCollectors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java" afterDir="false" />
+    <list default="true" id="11d35d4f-7d41-4dd4-a72e-41712499ef10" name="Default Changelist" comment="8.18 String练习">
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/ArrayAPIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/BigNumberAPIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/ScannerAPIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/StringBuilderAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_70.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_70.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/BaseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabase/javacoreI/StringAPIs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +19,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/ScannerAPIs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2808">
-              <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
+            <state relative-caret-position="-273">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/ArrayAPIs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4030">
+              <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/StringBuilderAPIs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1456">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -46,6 +65,7 @@
       <find>size</find>
       <find>&quot;true&quot;</find>
       <find>lndex</find>
+      <find>next</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -100,8 +120,14 @@
         <option value="$PROJECT_DIR$/src/main/java/javabase/baseothers/Welcome.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CollectingIntoMaps.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/basestream/CreateStreams.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" />
         <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/StringBuilderAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/ScannerAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/BigIntegerAPIS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javaString/BigNumberAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javacoreI/BaseString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javabase/javacoreI/ArrayAPIs.java" />
       </list>
     </option>
   </component>
@@ -121,7 +147,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +187,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javabase" type="462c0819:PsiDirectoryNode" />
-              <item name="javaString" type="462c0819:PsiDirectoryNode" />
+              <item name="baseothers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javabase" type="462c0819:PsiDirectoryNode" />
+              <item name="javacoreI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise" type="b2602c69:ProjectViewProjectNode" />
@@ -172,6 +206,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,10 +217,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -204,13 +239,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringAPIs">
+  <component name="RunManager" selected="Application.ArrayAPIs">
+    <configuration name="ArrayAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javacoreI.ArrayAPIs" />
+      <module name="exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javabase.javacoreI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.javaString.BaseString" />
+      <option name="MAIN_CLASS_NAME" value="javabase.javacoreI.BaseString" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.javaString.*" />
+          <option name="PATTERN" value="javabase.javacoreI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,12 +266,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectingIntoMaps$Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.basestream.CollectingIntoMaps$Person" />
+    <configuration name="BigNumberAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javacoreI.BigNumberAPIs" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.basestream.*" />
+          <option name="PATTERN" value="javabase.javacoreI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -231,12 +279,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.basestream.CreateStreams" />
+    <configuration name="ScannerAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javacoreI.ScannerAPIs" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.basestream.*" />
+          <option name="PATTERN" value="javabase.javacoreI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,25 +292,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.javaString.StringAPIs" />
+    <configuration name="StringBuilderAPIs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javabase.javacoreI.StringBuilderAPIs" />
       <module name="exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javabase.javaString.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Welcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javabase.baseothers.Welcome" />
-      <module name="exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javabase.baseothers.*" />
+          <option name="PATTERN" value="javabase.javacoreI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringAPIs" />
+        <item itemvalue="Application.ArrayAPIs" />
+        <item itemvalue="Application.BigNumberAPIs" />
         <item itemvalue="Application.BaseString" />
-        <item itemvalue="Application.CollectingIntoMaps$Person" />
-        <item itemvalue="Application.Welcome" />
-        <item itemvalue="Application.CreateStreams" />
+        <item itemvalue="Application.ScannerAPIs" />
+        <item itemvalue="Application.StringBuilderAPIs" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +359,9 @@
       <workItem from="1597461741200" duration="19168000" />
       <workItem from="1597564762623" duration="6203000" />
       <workItem from="1597626677847" duration="3040000" />
-      <workItem from="1597712434732" duration="16965000" />
+      <workItem from="1597712434732" duration="23567000" />
+      <workItem from="1597753736966" duration="3634000" />
+      <workItem from="1597798955826" duration="18626000" />
     </task>
     <task id="LOCAL-00001" summary="8.15练习">
       <created>1597491364233</created>
@@ -340,16 +377,23 @@
       <option name="project" value="LOCAL" />
       <updated>1597502254440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="8.18 String练习">
+      <created>1597736543866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597736543867</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110689000" />
+    <option name="totallyTimeSpent" value="139551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1633888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,16 +403,16 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23754153" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.14119601" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.049833886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.28504673" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.37707642" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.049833886" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.054817274" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.049833886" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,7 +500,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="8.15练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.15练习" />
+    <MESSAGE value="8.18 String练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="8.18 String练习" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package01/Test1.kt" />
@@ -619,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pc2/OrgLocalBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/package01/Bianliang.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -641,16 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="3817" selection-start-line="3817" selection-end-line="3817" />
-          <folding>
-            <element signature="e#177496#177497#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/BaseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4806">
@@ -792,10 +813,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javaString/StringAPIs.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2808">
-          <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
+        <state relative-caret-position="-2036">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="805" column="26" selection-start-line="805" selection-start-column="26" selection-end-line="805" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="749" column="20" selection-start-line="749" selection-start-column="20" selection-end-line="749" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/io/PrintWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pc2/OrgLocalBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/StringAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1574">
+          <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/BigNumberAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="46" column="63" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702">
+          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+          <folding>
+            <element signature="e#177457#177458#0" expanded="true" />
+            <element signature="e#177496#177497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/BaseString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1301">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/ScannerAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/ArrayAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4030">
+          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javabase/javacoreI/StringBuilderAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
