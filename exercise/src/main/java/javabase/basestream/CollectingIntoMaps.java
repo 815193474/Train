@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-15 20:37
+ * @Author luoGuanzhong
+ * @Date 2020-08-15 20:37
  */
 public class CollectingIntoMaps {
     public static class Person{

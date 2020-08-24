@@ -4,7 +4,7 @@ import java.io.File;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2019-12-05 17:34
+ * @Date 2019-12-05 17:34
  */
 public class DeleteFile {
     public static void main(String args[]){

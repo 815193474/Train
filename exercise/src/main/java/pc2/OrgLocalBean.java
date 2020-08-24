@@ -2,17 +2,12 @@ package pc2;
 
 
 
-/**
- * author : jinZhiQiang
- * date:2020/7/11
- */
-
 public class OrgLocalBean {
 
     /**
      * ID : 701
      * CODE : 620902006000
-     * NAME : 娓呮按娲惧嚭鎵�
+		 * NAME : 清水派出所
      * TYPE : null
      * DEPTH : 4
      * SEQ : 5
@@ -21,7 +16,7 @@ public class OrgLocalBean {
      * LEVEL_NAME : null
      * PARENT_ID : 695
      * PARENT_CODE : 620902000000
-     * PARENT_NAME : 閰掓硥甯傚叕瀹夊眬鑲冨窞鍒嗗眬
+		 * PARENT_NAME : 酒泉市公安局肃州分局
      * PARENT_IDS : 695,694,1,
      * REMARKS : null
      * NICK_NAME : null

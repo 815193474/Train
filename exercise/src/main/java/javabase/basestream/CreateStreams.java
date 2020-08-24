@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-15 18:11
+ * @Author luoGuanzhong
+ * @Date 2020-08-15 18:11
  */
 public class CreateStreams {
     // 声明为静态变量可以在main方法中调用 声明为public 可以在其他类中访问

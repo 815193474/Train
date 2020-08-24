@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2019-12-01 18:11
+ * @Date 2019-12-01 18:11
  */
 public class Shuang {
    static Integer x1;

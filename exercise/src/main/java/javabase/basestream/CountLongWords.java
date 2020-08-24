@@ -8,8 +8,8 @@ import java.nio.file.Paths;
 import java.util.*;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-15 15:12
+ * @Author luoGuanzhong
+ * @Date 2020-08-15 15:12
  */
 public class CountLongWords {
   public static void main(String[] args) throws IOException {

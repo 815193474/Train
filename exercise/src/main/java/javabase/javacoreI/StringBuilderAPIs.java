@@ -1,7 +1,7 @@
 package javabase.javacoreI;
 
 /**
- * @Author luoguanzhong @Data 2020-08-18 15:52
+ * @Author luoGuanzhong @Date 2020-08-18 15:52
  *
  * <p>StringBuilder 常用方法
  *

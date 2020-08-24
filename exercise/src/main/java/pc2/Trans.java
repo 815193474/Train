@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author luoguanzhong  VX:a815193474
- * @Data 2020-07-11 15:11
+ * @Author luoGuanzhong  VX:a815193474
+ * @Date 2020-07-11 15:11
  */
 public class Trans {
     public static void main(String[] args) throws IOException {

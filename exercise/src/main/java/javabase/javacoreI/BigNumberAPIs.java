@@ -5,7 +5,7 @@ import java.math.BigInteger;
 import java.math.RoundingMode;
 
 /**
- * @Author luoguanzhong @Data 2020-08-19 09:13
+ * @Author luoGuanzhong @Date 2020-08-19 09:13
  *
  * <p>BigInteger 任意精度的整数运算 BigDecimal 任意精度的浮点数运算
  */

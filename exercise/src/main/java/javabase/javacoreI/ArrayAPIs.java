@@ -3,46 +3,46 @@ package javabase.javacoreI;
 import java.util.Arrays;
 
 /**
- * @Author luoguanzhong @Data 2020-08-19 10:43
+ * @Author luoGuanzhong @Date 2020-08-19 10:43
  *
- * <p>Êý×éÁ·Ï° ArraysÀàµÄ³£ÓÃ·½·¨
+ * <p>æ•°ç»„ç»ƒä¹  Arraysç±»çš„å¸¸ç”¨æ–¹æ³•
  */
 public class ArrayAPIs {
   public static void main(String args[]) {
 
     /*
-     *  Ò»Î¬Êý×é
+     *  ä¸€ç»´æ•°ç»„
      *  */
     {
-      /* ÉùÃ÷Êý×éµÄ¼¸ÖÖ·½Ê½
-       * 1. Êý¾ÝÀàÐÍºó½ô¸ú[] ºÍ±äÁ¿Ãû×Ö; java ¹æ·¶ÍÆ¼öÐ´·¨
-       * 2. Ò²Ê¹ÓÃÊý¾ÝÀàÐÍ¼Ó±äÁ¿Ãû×Ö½ô¸ú[];
+      /* å£°æ˜Žæ•°ç»„çš„å‡ ç§æ–¹å¼
+       * 1. æ•°æ®ç±»åž‹åŽç´§è·Ÿ[] å’Œå˜é‡åå­—; java è§„èŒƒæŽ¨èå†™æ³•
+       * 2. ä¹Ÿä½¿ç”¨æ•°æ®ç±»åž‹åŠ å˜é‡åå­—ç´§è·Ÿ[];
        * */
-      int[] a; // ÉùÃ÷Êý×éa ²¢Ã»ÓÐ´´½¨Êý×é
-      int[] b = new int[10]; // ÉùÃ÷²¢´´½¨´óÐ¡Îª10µÄÊý×é Êý×é´óÐ¡²»Ò»¶¨ÊÇ³£Á¿ Ò²¿ÉÒÔÊÇ±äÁ¿ n
+      int[] a; // å£°æ˜Žæ•°ç»„a å¹¶æ²¡æœ‰åˆ›å»ºæ•°ç»„
+      int[] b = new int[10]; // å£°æ˜Žå¹¶åˆ›å»ºå¤§å°ä¸º10çš„æ•°ç»„ æ•°ç»„å¤§å°ä¸ä¸€å®šæ˜¯å¸¸é‡ ä¹Ÿå¯ä»¥æ˜¯å˜é‡ n
 
       /*
-       * Êý×é³õÊ¼»¯¼°ÄäÃûÊý×é
-       * JavaÌá¹©ÁËÒ»ÖÖ´´½¨Êý×é¶ÔÏó²¢Í¬Ê±¸³Óè³õÊ¼ÖµµÄ¼ò»¯ÊéÐ´ÐÎÊ½¡£
+       * æ•°ç»„åˆå§‹åŒ–åŠåŒ¿åæ•°ç»„
+       * Javaæä¾›äº†ä¸€ç§åˆ›å»ºæ•°ç»„å¯¹è±¡å¹¶åŒæ—¶èµ‹äºˆåˆå§‹å€¼çš„ç®€åŒ–ä¹¦å†™å½¢å¼ã€‚
        * */
       int[] array = {1, 2, 3, 4};
 
       /*
-       * ÉõÖÁ»¹¿ÉÒÔ³õÊ¼»¯Ò»¸öÄäÃûµÄÊý×é
+       * ç”šè‡³è¿˜å¯ä»¥åˆå§‹åŒ–ä¸€ä¸ªåŒ¿åçš„æ•°ç»„
        * new int[] {1,2,3};
        * array1 = new int[] {1,2,3};
        * */
 
       /*
-       * ´´½¨Ò»¸öÊý×ÖÊý×éÊ±£¬ ËùÓÐÔªËØ¶¼³õÊ¼»¯Îª 0¡£boolean Êý×éµÄÔªËØ»á³õÊ¼»¯Îª false¡£ ¶ÔÏóÊý×éµÄÔªËØÔò³õÊ¼»¯ÎªÒ»¸öÌØÊâÖµ null
-       * Êý×é´´½¨ºóÒ»°ãÍ¨¹ýforÑ­»·À´Ìí¼ÓÔªËØÖµ
+       * åˆ›å»ºä¸€ä¸ªæ•°å­—æ•°ç»„æ—¶ï¼Œ æ‰€æœ‰å…ƒç´ éƒ½åˆå§‹åŒ–ä¸º 0ã€‚boolean æ•°ç»„çš„å…ƒç´ ä¼šåˆå§‹åŒ–ä¸º falseã€‚ å¯¹è±¡æ•°ç»„çš„å…ƒç´ åˆ™åˆå§‹åŒ–ä¸ºä¸€ä¸ªç‰¹æ®Šå€¼ null
+       * æ•°ç»„åˆ›å»ºåŽä¸€èˆ¬é€šè¿‡forå¾ªçŽ¯æ¥æ·»åŠ å…ƒç´ å€¼
        */
       for (int i = 0; i < 10; i++) {
         b[i] = i;
       }
 
       /*
-       * foreach Ñ­»· ¿ÉÒÔÓÃÀ´ÒÀ´Î´¦ÀíÊý×éÖÐµÄÃ¿¸öÔªËØ£¨ÆäËûÀàÐÍµÄÔªËØ¼¯ºÏÒà¿É£©¶ø²»±ØÖ¸¶¨ÏÂ±êÖµ
+       * foreach å¾ªçŽ¯ å¯ä»¥ç”¨æ¥ä¾æ¬¡å¤„ç†æ•°ç»„ä¸­çš„æ¯ä¸ªå…ƒç´ ï¼ˆå…¶ä»–ç±»åž‹çš„å…ƒç´ é›†åˆäº¦å¯ï¼‰è€Œä¸å¿…æŒ‡å®šä¸‹æ ‡å€¼
        * for (variable : collection) statement
        * */
       for (int n : b) {
@@ -50,13 +50,13 @@ public class ArrayAPIs {
       }
 
       /*
-       * ´òÓ¡Êý×é³ýÁËÊ¹ÓÃÑ­»·´òÓ¡»¹¿ÉÒÔÊ¹ÓÃ Arrays.toString(b) ·½·¨
+       * æ‰“å°æ•°ç»„é™¤äº†ä½¿ç”¨å¾ªçŽ¯æ‰“å°è¿˜å¯ä»¥ä½¿ç”¨ Arrays.toString(b) æ–¹æ³•
        * */
       System.out.println(Arrays.toString(b));
 
       /*
-       * ÔÚ Java ÖÐ£¬ÔÊÐí½«Ò»¸öÊý×é±äÁ¿¿½±´¸øÁíÒ»¸öÊý×é±äÁ¿¡£ÕâÊ±£¬ Á½¸ö±äÁ¿½«ÒýÓÃÍ¬Ò»¸öÊý×é
-       * ËùÒÔÔÚÐÞ¸ÄÊý×é b Ö®ºó £¬cµÄÔªËØÒ²·¢Éú¸Ä±ä
+       * åœ¨ Java ä¸­ï¼Œå…è®¸å°†ä¸€ä¸ªæ•°ç»„å˜é‡æ‹·è´ç»™å¦ä¸€ä¸ªæ•°ç»„å˜é‡ã€‚è¿™æ—¶ï¼Œ ä¸¤ä¸ªå˜é‡å°†å¼•ç”¨åŒä¸€ä¸ªæ•°ç»„
+       * æ‰€ä»¥åœ¨ä¿®æ”¹æ•°ç»„ b ä¹‹åŽ ï¼Œcçš„å…ƒç´ ä¹Ÿå‘ç”Ÿæ”¹å˜
        * */
       int[] c = b;
       b[0] = 3;
@@ -67,14 +67,14 @@ public class ArrayAPIs {
 
       /*
        * Arrays.copyOf(array,length)
-       * ÊµÏÖ½«Êý×éÖÐÐ¡ÓÚ³¤¶ÈÄÇ²¿·Ö¸´ÖÆ¹ýÈ¥
-       * length ³¤¶ÈÐ¡ÓÚÔ­Êý×éÔò¸´ÖÆÔ­Êý×éµÄÒ»²¿·Ö£¬³¤¶È´óÓÚÔ­Êý×é£¬ÄÇÃ´¶àÓàµÄÔªËØ¾Í»á±»Ä¬ÈÏ¸³Öµ
-       * ÊýÖµÐÍ¸³ÖµÎª 0
-       * ²¼¶ûÐÍ¸³ÖµÎª false
-       * ¶ÔÏó¸³ÖµÎª null
+       * å®žçŽ°å°†æ•°ç»„ä¸­å°äºŽé•¿åº¦é‚£éƒ¨åˆ†å¤åˆ¶è¿‡åŽ»
+       * length é•¿åº¦å°äºŽåŽŸæ•°ç»„åˆ™å¤åˆ¶åŽŸæ•°ç»„çš„ä¸€éƒ¨åˆ†ï¼Œé•¿åº¦å¤§äºŽåŽŸæ•°ç»„ï¼Œé‚£ä¹ˆå¤šä½™çš„å…ƒç´ å°±ä¼šè¢«é»˜è®¤èµ‹å€¼
+       * æ•°å€¼åž‹èµ‹å€¼ä¸º 0
+       * å¸ƒå°”åž‹èµ‹å€¼ä¸º false
+       * å¯¹è±¡èµ‹å€¼ä¸º null
        * */
       int[] f = Arrays.copyOf(b, 11);
-      System.out.println(Arrays.toString(f)); // f[10] µÄÖµÎª0
+      System.out.println(Arrays.toString(f)); // f[10] çš„å€¼ä¸º0
 
       if (args.length == 0 || ("Hello").equals(args[0])) {
         System.out.println("hello");
@@ -87,7 +87,7 @@ public class ArrayAPIs {
 
       /*
        * Arrays.sort(array);
-       * Èç¹ûÐèÒª¶ÔÊýÖµÀàÐÍµÄÊý×é½øÐÐÅÅÐò¿ÉÒÔÑ¡ÔñÊ¹ÓÃArrays.sort(array)
+       * å¦‚æžœéœ€è¦å¯¹æ•°å€¼ç±»åž‹çš„æ•°ç»„è¿›è¡ŒæŽ’åºå¯ä»¥é€‰æ‹©ä½¿ç”¨Arrays.sort(array)
        * */
       int[] array2 = {3, 1, 2, 5, 4, 6};
       Arrays.sort(array2);
@@ -95,9 +95,9 @@ public class ArrayAPIs {
 
       /*
        * static type copyOf(type[]a, int length)
-       * ·µ»ØÓë a ÀàÐÍÏàÍ¬µÄÒ»¸öÊý×é£¬ Æä³¤¶ÈÎª length
+       * è¿”å›žä¸Ž a ç±»åž‹ç›¸åŒçš„ä¸€ä¸ªæ•°ç»„ï¼Œ å…¶é•¿åº¦ä¸º length
        * static type copyOfRange(type[]a , int start, int end)
-       * ·µ»ØÓë a ÀàÐÍÏàÍ¬µÄÒ»¸öÊý×é£¬ Æä³¤¶ÈÎªend-start£¬ Êý×éÔªËØÎª a µÄÖµ
+       * è¿”å›žä¸Ž a ç±»åž‹ç›¸åŒçš„ä¸€ä¸ªæ•°ç»„ï¼Œ å…¶é•¿åº¦ä¸ºend-startï¼Œ æ•°ç»„å…ƒç´ ä¸º a çš„å€¼
        * */
       System.out.println(Arrays.toString(Arrays.copyOf(array2, 3))); // pint [1, 2, 3]
       System.out.println(Arrays.toString(Arrays.copyOfRange(array2, 2, 4))); // print [3, 4]
@@ -105,35 +105,35 @@ public class ArrayAPIs {
       /*
        * static int binarySearch(type[] a , type v)
        * static int binarySearch(type[]a, int start, int end, type v)
-       * ²ÉÓÃ¶þ·ÖËÑË÷Ëã·¨²éÕÒÖµ v¡£Èç¹û²éÕÒ³É¹¦£¬ Ôò·µ»ØÏàÓ¦µÄÏÂ±êÖµ£» ·ñÔò£¬ ·µ»ØÒ»¸ö¸ºÊýÖµ ¡£
+       * é‡‡ç”¨äºŒåˆ†æœç´¢ç®—æ³•æŸ¥æ‰¾å€¼ vã€‚å¦‚æžœæŸ¥æ‰¾æˆåŠŸï¼Œ åˆ™è¿”å›žç›¸åº”çš„ä¸‹æ ‡å€¼ï¼› å¦åˆ™ï¼Œ è¿”å›žä¸€ä¸ªè´Ÿæ•°å€¼ ã€‚
        * */
-      System.out.println(Arrays.binarySearch(array2, 3)); // print 2 ÔªËØ3µÄÏÂ±ê
-      System.out.println(Arrays.binarySearch(array2, 1, 3, 2)); // print 1 ÔªËØ2µÄÏÂ±ê
+      System.out.println(Arrays.binarySearch(array2, 3)); // print 2 å…ƒç´ 3çš„ä¸‹æ ‡
+      System.out.println(Arrays.binarySearch(array2, 1, 3, 2)); // print 1 å…ƒç´ 2çš„ä¸‹æ ‡
       System.out.println(Arrays.binarySearch(array2, 1, 3, 4)); // print -4
 
       /*
        * static void fi11(type[]a , type v)
-       * ½«Êý×éµÄËùÓÐÊý¾ÝÔªËØÖµÉèÖÃÎª V
+       * å°†æ•°ç»„çš„æ‰€æœ‰æ•°æ®å…ƒç´ å€¼è®¾ç½®ä¸º V
        * */
       Arrays.fill(array, 2);
       System.out.println(Arrays.toString(array)); // print [2, 2, 2, 2]
 
       /*
        * static boolean equals(type[]a, type[]b)
-       * Èç¹ûÁ½¸öÊý×é´óÐ¡ÏàÍ¬£¬ ²¢ÇÒÏÂ±êÏàÍ¬µÄÔªËØ¶¼¶ÔÓ¦ÏàµÈ£¬ ·µ»Ø true¡£
+       * å¦‚æžœä¸¤ä¸ªæ•°ç»„å¤§å°ç›¸åŒï¼Œ å¹¶ä¸”ä¸‹æ ‡ç›¸åŒçš„å…ƒç´ éƒ½å¯¹åº”ç›¸ç­‰ï¼Œ è¿”å›ž trueã€‚
        * */
       System.out.println(Arrays.equals(array, array2)); // print false
     }
 
     /*
-     * ¶àÎ¬Êý×é
+     * å¤šç»´æ•°ç»„
      * */
     {
-      /* ¶¨Òå¶þÎ¬Êý×é */
+      /* å®šä¹‰äºŒç»´æ•°ç»„ */
       int[][] array3 = new int[3][3];
       System.out.println(array3.length);
-
-      /* Ïò¶þÎ¬Êý×é´æÈëÊý¾Ý */
+  
+      /* å‘äºŒç»´æ•°ç»„å­˜å…¥æ•°æ® */
       for (int i = 0; i < array3.length; i++) {
         for (int j = 0; j < array3[i].length; j++) {
           array3[i][j] = j + i;
@@ -142,16 +142,16 @@ public class ArrayAPIs {
 
       /*
        * Arrays.deepToString(array)
-       * ´òÓ¡¶þÎ¬Êý×é
+       * æ‰“å°äºŒç»´æ•°ç»„
        * */
       System.out.println(Arrays.deepToString(array3));
-
-      /* ±éÀú´òÓ¡¶þÎ¬Êý×é */
+  
+      /* éåŽ†æ‰“å°äºŒç»´æ•°ç»„ */
       for (int[] arr : array3) {
         System.out.println(Arrays.toString(arr));
       }
-
-      /* ·ÃÎÊ¶þÎ¬Êý×é */
+  
+      /* è®¿é—®äºŒç»´æ•°ç»„ */
       System.out.println(array3[0][1]); // print 1
     }
   }

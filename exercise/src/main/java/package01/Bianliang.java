@@ -4,7 +4,7 @@ import javafx.beans.property.ObjectProperty;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2020-02-13 14:40
+ * @Date 2020-02-13 14:40
  */
 
  class B  extends Object {

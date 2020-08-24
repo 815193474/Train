@@ -2,7 +2,7 @@ package package01;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2020-02-13  15:32
+ * @Date 2020-02-13  15:32
  */
 public class Test1 {
     public Test1(){

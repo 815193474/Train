@@ -1,8 +1,8 @@
 package javabase.baseothers;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-17 09:39
+ * @Author luoGuanzhong
+ * @Date 2020-08-17 09:39
  */
 public class Welcome {
   public static void main(String[] args) {

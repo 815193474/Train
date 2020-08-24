@@ -7,7 +7,7 @@ import java.net.Socket;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2020-04-29 15:37
+ * @Date 2020-04-29 15:37
  */
 public class Client {
     public static void main(String[] args) {

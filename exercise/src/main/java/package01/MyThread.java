@@ -2,7 +2,7 @@ package package01;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2020-06-17 11:30
+ * @Date 2020-06-17 11:30
  */
 public class MyThread implements Runnable {
     public void run(){

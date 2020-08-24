@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2019-11-18 15:58
+ * @Date 2019-11-18 15:58
  */
 public class Text {
     private String name;

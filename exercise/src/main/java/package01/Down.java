@@ -7,7 +7,7 @@ import java.net.URL;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2019-08-19 14:40
+ * @Date 2019-08-19 14:40
  */
 public class Down {
     public  static void  main(String args[]) throws Exception{

@@ -1,7 +1,7 @@
 package javabase.javacoreI;
 
 /**
- * @Author luoguanzhong @Data 2020-08-18 09:14
+ * @Author luoGuanzhong @Date 2020-08-18 09:14
  *
  * <p>java String API练习 1. substring 方法 ; 2. 字符串的拼接 ‘ + ' ; 3. 检测字符串是否相等 ’ equals ’ ; 4. 空串 与 Null串
  * ; 5. 访问静态变量
@@ -67,7 +67,7 @@ public class BaseString {
       BaseString baseString = new BaseString();
       System.out.println(baseString.ss);
       // 以下方法也可以访问静态变量
-      System.out.println(baseString.six);
+			System.out.println(baseString.six); // 不推荐 其实static变量six 与baseString 没有任何关系 他只属于BaseString类
     }
   }
 

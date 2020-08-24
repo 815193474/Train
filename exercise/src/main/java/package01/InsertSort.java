@@ -2,7 +2,7 @@ package package01;
 
 /**
  * @Author wolf  VX:a815193474
- * @Data 2019-12-16 16:39
+ * @Date 2019-12-16 16:39
  */
 public class InsertSort {
     public static void main(String[] args){

@@ -1,8 +1,8 @@
 package javabase.basetype;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-10 14:19
+ * @Author luoGuanzhong
+ * @Date 2020-08-10 14:19
  */
 public class Shorttype {
   public static void main(String[] args) {

@@ -6,8 +6,8 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 /**
- * @Author luoguanzhong
- * @Data 2020-08-16 17:09
+ * @Author luoGuanzhong
+ * @Date 2020-08-16 17:09
  */
 public class DownstreamCollectors {
     public static class City{

@@ -3,7 +3,7 @@ package javabase.javacoreI;
 import java.util.Scanner;
 
 /**
- * @Author luoguanzhong @Data 2020-08-18 16:31
+ * @Author luoGuanzhong @Date 2020-08-18 16:31
  *
  * <p>要想通 过控制台进行输人，首先需要构造一个 Scanner 对象，并与“ 标准输人流” System.in 关联
  */
