@@ -5,8 +5,8 @@ package javabase.javacoreI;
  *
  * <p>StringBuilder 常用方法
  *
- * <p>在 JDK5.0 中引入 StringBuilder 类。 这个类的前身是 StringBuffer, 其效率稍有些低， 但允许采用多线程的方式执行添加或删除字符的操作 U
- * 如果所有字符串在一个单线 程中编辑 （通常都是这样，) ， 则应该用 StringBuilder 替代它。 这两个类的 AP丨是相同的
+ * <p>在 JDK5.0 中引入 StringBuilder 类。 这个类的前身是 StringBuffer, 其效率稍有些低， 但允许采用多线程的方式执行添加或删除字符的操作
+ * 如果所有字符串在一个单线 程中编辑 （通常都是这样) ， 则应该用 StringBuilder 替代它。 这两个类的 API是相同的
  *
  * <p>有些时候， 需要由较短的字符串构建字符串， 例如，采用字 符串连接的方式达到此目的效率比较低。 每次连接字符串，都会构建一个新的 String 对象， 既耗时，又浪费空间。使用
  * StringBuilder 类就可以避免这个问题的发生。
@@ -66,7 +66,11 @@ public class StringBuilderAPIs {
     删除偏移量从 startIndex 到 -endIndex-1 的代码单元并返回 this。
     */
     System.out.println(stringBuilder.delete(0, 2));
-
+	
+		/*
+		 * deleteCharAt(int index)
+		 * 删除指定位置char
+		 * */
     /*
     String toString()
     返回一个与构建器或缓冲器内容相同的字符串

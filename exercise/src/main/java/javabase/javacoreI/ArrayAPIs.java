@@ -73,8 +73,8 @@ public class ArrayAPIs {
        * 布尔型赋值为 false
        * 对象赋值为 null
        * */
-      int[] f = Arrays.copyOf(b, 11);
-      System.out.println(Arrays.toString(f)); // f[10] 的值为0
+			int[] f = Arrays.copyOf(b, 9);
+			System.out.println("我是复制得到的" + Arrays.toString(f)); // f[10] 的值为0
 
       if (args.length == 0 || ("Hello").equals(args[0])) {
         System.out.println("hello");
