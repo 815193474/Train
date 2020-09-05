@@ -153,6 +153,10 @@ public class ArrayAPIs {
   
       /* 访问二维数组 */
       System.out.println(array3[0][1]); // print 1
+  
+      /*
+       * Array.stream(array, from, to ）可以从数组中位于 from （包括）和 to 不包括）的元素中创建一个流
+       * */
     }
   }
 }

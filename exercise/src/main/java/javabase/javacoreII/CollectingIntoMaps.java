@@ -1,4 +1,4 @@
-package javabase.basestream;
+package javabase.javacoreII;
 
 import java.util.HashMap;
 import java.util.HashSet;

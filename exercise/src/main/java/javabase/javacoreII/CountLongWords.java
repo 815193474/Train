@@ -1,7 +1,6 @@
-package javabase.basestream;
+package javabase.javacoreII;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -31,5 +30,7 @@ public class CountLongWords {
         count = words.parallelStream().filter(w -> w.length() > 3).count(); // 并行 过滤器和count()同时执行
     System.out.println(count);
     hh.run();
+  
+  
   }
 }

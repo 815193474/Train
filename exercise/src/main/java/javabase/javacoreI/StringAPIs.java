@@ -36,7 +36,7 @@ public class StringAPIs {
     System.out.println(str.compareTo("hello")); // print 0
 
     /*
-     boolean equals(0bject other)
+     boolean equals(object other)
     如果字符串与 other 相等， 返回 true。
     */
     System.out.println(("hello").equals(str)); // print true

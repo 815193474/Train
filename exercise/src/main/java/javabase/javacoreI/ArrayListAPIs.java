@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 /**
  * @Author luoGuanzhong @Date 2020-08-23 17:49
+ *
+ * ArrayList 增删慢，检索快 线程不安全
  */
 public class ArrayListAPIs {
 	
@@ -11,6 +13,7 @@ public class ArrayListAPIs {
 	 * ArrayList 是一个采用类型参数（ type parameter ) 的泛型类（ generic class)
 	 * 如: ArrayList<Employee> staff = new ArrayList<Employee>();
 	 * 但是在 java se 7 中右边的类型参数可以省略
+	 *
 	 * */
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package javabase.basestream;
+package javabase.javacoreII;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

@@ -29,6 +29,11 @@ public class InterfaceAPIs {
 	
 	public static void main(String[] args) {
 		/*
+		 * instanceof
+		 * a instanceof Pair<String>
+		 * a 是否是任意类型的一个 Pair
+		 * */
+		/*
 		 * 使用instanceof 检查一个对象是否实现了某个特定的接口
 		 * */
 		Employee e = new Employee("ls", 2);
