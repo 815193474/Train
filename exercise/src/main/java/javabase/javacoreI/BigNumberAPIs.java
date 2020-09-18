@@ -53,7 +53,7 @@ public class BigNumberAPIs {
     System.out.println(l); // print 33.4
 
     /*
-    static BigDecimal valueOf(1 ong x ,int scale)
+    static BigDecimal valueOf(long x ,int scale)
     返回值为 X 或 x / 10 的scale次方 的一个大实数
     */
     System.out.println(j.valueOf(2,3)); // print    2 / 10*10*10

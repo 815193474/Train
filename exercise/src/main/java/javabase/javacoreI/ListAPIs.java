@@ -3,7 +3,7 @@ package javabase.javacoreI;
 /**
  * @Author luoGuanzhong @Date 2020-08-31 15:03
  *
- * <p>List 是一个有序集合
+ * <p>List 是一个有序集合 Set 是无序集合，不允许元素重复，只允许一个值为空
  */
 public class ListAPIs {
 	/*
@@ -20,11 +20,11 @@ public class ListAPIs {
 	 * */
 	
 	/*
-	 * ListIterator<E> 1 istIterator()
+	 * ListIterator<E> listIterator()
 	 * 返回一个列表迭代器， 以便用来访问列表中的元素。
 	 * void add(int i, E element )
 	 * 在给定位置添加一个元素。
-	 * void addAl 1 ( int i, Collection<? extends E> elements )
+	 * void addAll ( int i, Collection<? extends E> elements )
 	 * 将某个集合中的所有元素添加到给定位置。
 	 * E remove(int i)
 	 * 删除给定位置的元素并返回这个元素

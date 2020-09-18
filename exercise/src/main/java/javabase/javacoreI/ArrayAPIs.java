@@ -112,7 +112,7 @@ public class ArrayAPIs {
       System.out.println(Arrays.binarySearch(array2, 1, 3, 4)); // print -4
 
       /*
-       * static void fi11(type[]a , type v)
+			 * static void fill(type[]a , type v)
        * 将数组的所有数据元素值设置为 V
        * */
       Arrays.fill(array, 2);

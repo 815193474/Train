@@ -14,5 +14,16 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.70</version>
         </dependency>
+      <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+      <dependency>
+        <groupId>net.sourceforge.tess4j</groupId>
+        <artifactId>tess4j</artifactId>
+        <version>3.2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>1.5.0-b01</version>
+      </dependency>
     </dependencies>
 </project>

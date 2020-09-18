@@ -9,7 +9,7 @@ import java.util.Random;
 /**
  * @Author luoGuanzhong @Date 2020-08-26 16:35
  *
- * <p>代理具有以下特点
+ * <p>动态代理具有以下特点
  *
  * <p>指定接口所需要的全部方法
  *
@@ -50,6 +50,9 @@ public class ProxyAPIs {
 			 * handler  是实现了InvocationHandler 接口的调用处理器
 			 *
 			 * */
+			// CLassLoader loader:类的加载器
+			// Class<?> interfaces:得到全部的接口
+			// InvocationHandler h:得到InvocationHandler接口的子类的实例
 			Object proxy = Proxy.newProxyInstance(null, new Class[]{Comparable.class}, handler);
 			objects[i] = proxy;
 		}
@@ -68,6 +71,9 @@ public class ProxyAPIs {
 			target = t;
 		}
 		
+		// Object proxy:被代理的对象
+		// Method method:要调用的方法
+		// Object[] args:方法调用时所需要参数
 		public Object invoke(Object proxy, Method m, Object[] args) throws Throwable {
 			
 			System.out.println(target);
@@ -89,7 +95,7 @@ public class ProxyAPIs {
 	 * 静态代理
 	 * 静态代理模式在不改变目标对象的前提下，实现了对目标对象的功能扩展。
 	 * 不足：静态代理实现了目标对象的所有方法，一旦目标接口增加方法，代理对象和目标对象都要进行相应的修改，增加维护成本。
-	 *
+	 * 静态代理实现原理是新增一个接口的(新建一个类，其中代码主要是如日志等其他操作加接口方法调用)代理类，用户在访问时调用接口的代理类赋值给接口变量
 	 * */
 	
 	/*

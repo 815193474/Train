@@ -8,12 +8,12 @@ import java.util.Set;
  * @Author luoGuanzhong
  * @Date 2020-08-31 15:06
  *
- * Set 集 set接口等同于 Collection 接口，不过其方法的行为有更严谨的定义 它不允许有重复的元素
+ * Set 集 set接口是 Collection 接口下的子接口，不过其方法的行为有更严谨的定义 它不允许有重复的元素 只允许有一个值为null
  */
 public class SetAPIs {
 	
 	/*
-	 * 。set 的 add 方法首先在集中查找要添加的对象，如果不存在，就将这个对象添加进去
+	 * set 的 add 方法首先在集中查找要添加的对象，如果不存在，就将这个对象添加进去
 	 * */
 	
 	/*

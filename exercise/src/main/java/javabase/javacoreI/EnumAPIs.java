@@ -65,5 +65,6 @@ public enum EnumAPIs {
 		if (size == EnumAPIs.EXTRA_LARGE) {
 			System.out.println("you need to pay extra " + numberFormat.format(3));
 		}
+		
 	}
 }

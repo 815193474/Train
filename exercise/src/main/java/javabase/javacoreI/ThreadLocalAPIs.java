@@ -7,7 +7,13 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * @Author luoGuanzhong @Date 2020-09-03 21:48
  *
- * <p>这个类提供线程局部变量。这些变量不同于正常同行，每一个线程访问一个（通过其 get或 set法）有自己独立的变量，初始化复制
+ * <p>这个类提供线程局部变量。这些变量不同于正常线程，每一个线程访问一个（通过其 get或 set法）有自己独立的变量，初始化复制
+ *
+ * ThreadLocal 通过代码同步的方法实现了对多线程问题的解决，每个线程都有变量的拷贝，所以线程之间不会影响
+ *
+ * 它不是线程，而是线程变量，通常被定义为静态变量，
+ *
+ * 这种设计是‘空间换时间’，synchronized顺序执行是‘时间换取空间’
  */
 public class ThreadLocalAPIs {
 	/*

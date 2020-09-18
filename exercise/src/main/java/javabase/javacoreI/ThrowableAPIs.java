@@ -111,7 +111,7 @@ public class ThrowableAPIs {
 		
 		/*
 		 * 过滤器
-		 * 实现 filter 接口并定义 boolean isLoggab1e(LogRecord record)
+		 * 实现 filter 接口并定义 boolean isLoggable(LogRecord record)
 		 * */
 		
 		/*

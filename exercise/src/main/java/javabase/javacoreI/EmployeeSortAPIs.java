@@ -48,7 +48,7 @@ public class EmployeeSortAPIs {
 		
 		/*
 		 * Comparator 接口
-		 * ArrayS.Sort 方法还有第二个版本， 有一个数组和一个比较器 ( comparator )
+		 * Arrays.Sort 方法还有第二个版本， 有一个数组和一个比较器 ( comparator )
 		 * 作为参数， 比较器是实现了 Comparator 接口的类的实例
 		 *
 		 * */

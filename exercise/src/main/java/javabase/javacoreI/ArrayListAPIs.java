@@ -45,7 +45,7 @@ public class ArrayListAPIs {
 		/*
 		 * ensureCapacity();
 		 * 确保数组列表在不重新分配存储空间的情况下就能够保存给定数量的元素
-		 * 测试发现ensureCapacity() 方法可以提高array提高元素时的效率
+		 * 测试发现ensureCapacity() 方法可以提高array增加元素时的效率
 		 * */
 		
 		ArrayList<Object> array1 = new ArrayList<>();

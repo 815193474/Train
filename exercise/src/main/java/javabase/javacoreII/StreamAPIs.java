@@ -2,6 +2,8 @@ package javabase.javacoreII;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -31,5 +33,20 @@ public class StreamAPIs {
 		/*
 		 * Array.stream(array, from, to ）可以从数组中位于 from （包括）和 to 不包括）的元素中创建一个流
 		 * */
+//    Stream.generate(Math::random); // 无限流
+		
+		/*
+		 * ?static <T> Collector<T,?,List<T> toList()
+		 * ? static <T> Collector<T,?, Set<T> toSet()
+		 * 产生一个将元素收集到列表或集中的 集器
+		 * 将流转换成集合 stream.collect(Collectors.toList())
+		 * */
+		List<String> list1 = Stream.of(str).collect(Collectors.toList());
+		
+		/*
+		 * max方法根据条件返回最大值，返回的Optional对象有效的避免了空指针问题
+		 * */
+		Optional<String> s = Stream.of(str).max(String::compareToIgnoreCase);
+		System.out.println(s);
 	}
 }

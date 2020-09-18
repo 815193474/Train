@@ -1,5 +1,8 @@
 package javabase.javacoreI;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * @Author luoGuanzhong @Date 2020-09-01 16:26
  *
@@ -54,4 +57,18 @@ public class RegularAPIs {
     ^ 代表字符串的开始
     $ 代表字符串的结束
   	* */
+	public static void main(String[] args) {
+		//
+		String s = "ssss";
+		Pattern pattern = Pattern.compile("[s+]");
+		Matcher matcher = pattern.matcher(s);
+		while (matcher.find()) {
+			System.out.println(matcher.group()); // 打印四次 s
+		}
+	
+		/*
+		 * 	matcher.replaceAll() 替换匹配到的所有地方
+		 * matcher.replaceFirst() 方法将只替换模式的第一次出现
+		 * */
+	}
 }

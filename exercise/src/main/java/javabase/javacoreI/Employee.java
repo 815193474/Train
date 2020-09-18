@@ -6,6 +6,8 @@ import java.util.Comparator;
  * @Author luoGuanzhong @Date 2020-08-25 14:20
  *
  * <p>用来排序练习的实体类
+ * 对象的属性排序 实现 comparable<T>  接口 并重写compareTo() 方法
+ *
  */
 public class Employee implements Comparable<Employee>, Comparator<String> {
 	

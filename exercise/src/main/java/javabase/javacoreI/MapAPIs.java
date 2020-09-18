@@ -1,9 +1,17 @@
 package javabase.javacoreI;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 /**
  * @Author luoGuanzhong @Date 2020-08-31 14:55
@@ -56,7 +64,7 @@ public class MapAPIs {
 	}
 	
 	/*
-	 * HashMap 和 TreeMap
+	 * HashMap 、 HashTable 、 TreeMap
 	 * */ {
 		/*
 		 * 散列映射对键进行散列， 树映射用键的整体顺序对元素进行排序， 并将其组织成搜索树。散列或比较函数只能作用于键
@@ -66,6 +74,7 @@ public class MapAPIs {
 		 * */
 		/*
 		 * HashMap<K,V>
+		 *   只允许一个key值为null 允许多条记录的Value为 Null 非同步线程
 		 * HashMap()
 		 * HashMap(int initialCapacity)
 		 * HashMap(int initialCapacity, float loadFactor)
@@ -75,7 +84,14 @@ public class MapAPIs {
 		 * */
 		
 		/*
+		 * HashTable
+		 * 与HashMap相似，但是不同的是，HashTable的key和value不允许为null
+		 * 它支持线程同步，同一时刻只有一个线程可以读写HashTable，因此的他的速度相对较慢
+		 * */
+		
+		/*
 		 * .TreeMap<K,V>
+		 *  默认是升序排序 ，也可以指定比较器 不允许key值为null
 		 * TreeMap()
 		 * 为实现 Comparable 接口的键构造一个空的树映射
 		 * TreeMap(Comparator<? super K> c)
@@ -117,7 +133,20 @@ public class MapAPIs {
 		for (Map.Entry<Integer, String> maps : map.entrySet()) {
 			System.out.println(maps.getKey() + " " + maps.getValue());
 		}
+		/*
+		 * 对map中的元素根据key值排序
+		 *
+		 * */
+		List<Map.Entry<Integer, String>> list = new ArrayList<>(map.entrySet());
+		Collections.sort(list, new Comparator<Entry<Integer, String>>() {
+			@Override
+			public int compare(Entry<Integer, String> o1, Entry<Integer, String> o2) {
+				return o2.getKey() - o1.getKey();
+			}
+		});
+		ListIterator iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 	}
-	
-	
 }

@@ -7,11 +7,11 @@ import java.util.ListIterator;
 /**
  * @Author luoGuanzhong @Date 2020-08-31 15:26
  *
- * <p>LinkedList 链表 链表节点中存放 数据 节点前驱结点索引 和 后驱节点索引 也提供了双端队列
+ * <p>LinkedList 链表 链表节点中存放 数据、 节点前驱节点索引 和 后驱节点索引 也提供了双端队列
  */
 public class LinkedListAPIs {
 	/*
-	 * 增删块
+	 * 增删快，检索慢
 	 * */
 	
 	/*

@@ -32,7 +32,7 @@ public class CollectionsAPIs {
 	 * */
 	
 	/*
-	 * 替换所以的元素(Fill)
+	 * 替换所有的元素(Fill)
 	 * 使用指定元素替换指定列表中的所有元素。
 	 * Collections.fill(li,"aaa");
 	 * */

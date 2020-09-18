@@ -12,11 +12,11 @@ import java.util.Random;
  *
  * <p>在运行时分析类的能力。
  *
- * <p>?在运行时查看对象， 例如， 编写一个 toString 方法供所有类使用。
+ * <p>在运行时查看对象， 例如， 编写一个 toString 方法供所有类使用。
  *
- * <p>?实现通用的数组操作代码。
+ * <p>实现通用的数组操作代码。
  *
- * <p>?利用 Method 对象，这个对象很像中的函数指针。
+ * <p>利用 Method 对象，这个对象很像中的函数指针。
  */
 public class ReflectionAPIs {
 	
@@ -63,7 +63,7 @@ public class ReflectionAPIs {
 		
 		/*
 		 * newInstance()
-		 * 可以用来动态地创建一个类的实
+		 * 可以用来动态地创建一个类的实例
 		 * */
 		
 		Object r2 = r.getClass().newInstance();

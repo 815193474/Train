@@ -8,9 +8,9 @@ package javabase.javacoreI;
 public class ThreadAPIs {
 	/*
 	 * Thread(Runnable target)
-	 *	构造一个新线程， 用于调用给定目标的 nm() 方法。
+	 *	构造一个新线程， 用于调用给定目标的 run() 方法。
 	 *	void start( )
-	 *	启动这个线程， 将引发调用 mn() 方法。这个方法将立即返回， 并且新线程将并发运行。
+	 *	启动这个线程， 将引发调用 run() 方法。这个方法将立即返回， 并且新线程将并发运行。
 	 *	void run( )
 	 *	调用关联 Runnable 的 run 方法。
 	 * */

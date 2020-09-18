@@ -3,8 +3,9 @@ package javabase.javacoreI;
 /**
  * @Author luoGuanzhong @Date 2020-08-18 09:14
  *
- * <p>java String API练习 1. substring 方法 ; 2. 字符串的拼接 ‘ + ' ; 3. 检测字符串是否相等 ’ equals ’ ; 4. 空串 与 Null串
- * ; 5. 访问静态变量
+ * <p>java String API练习
+ *
+ * <p>1. substring 方法 ; 2. 字符串的拼接 ‘ + ' ; 3. 检测字符串是否相等 ’ equals ’ ; 4. 空串 与 Null串 ; 5. 访问静态变量
  */
 public class BaseString {
 
@@ -13,8 +14,8 @@ public class BaseString {
     String str = "hello";
     String str2 = str.substring(0, 3); // 截取字符串下标 大于等于0 小于3的字符串
     System.out.println(str2); // print hel
-
-    // 2. 字符串的拼接  ' + ' 以下代码将“ Expletivedeleted” 赋给变量 message
+	
+		// 2. 字符串的拼接  ' + ' 以下代码将“ Expletive 和 deleted” 赋给变量 message
     String expletive = "Expletive";
     String PC13 = "deleted";
     String message = expletive + PC13;
@@ -29,7 +30,7 @@ public class BaseString {
     System.out.println(all); // print " s/m/l"
 
     /*
-    java 中字符串时不可变的 但是字符串的引用可以改变 这就解决了字符串的修改问题
+    java 中字符串是不可变的 但是字符串的引用可以改变 这就解决了字符串的修改问题
     java 中不可变字符串的优点是 字符串可以在编译器中共享 弥补了提取字符串和拼接字符串的效率
     */
     String str3 = str2 + "p"; // 先提取，再拼接
@@ -42,7 +43,7 @@ public class BaseString {
     System.out.println("hello".equals(str4)); // print false
     /*
     System.out.println(str4.equals("hello"));
-    不规范 当str 是空值的时候，程序会异常 所以必须将字符串放在前面 变量在后
+    ！！！不规范 当str 是空值的时候，程序会异常 所以必须将字符串放在前面 变量在后
     */
 
     // java 中空串 与 Null串

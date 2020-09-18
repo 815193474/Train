@@ -68,10 +68,10 @@ public class StringAPIs {
     System.out.println(str.indexOf("l", 4)); // print -1 不存在字符串
 
     /*
-    int 1astIndexOf(String str)
-    int 1astIndexOf(String str, int fromIndex )
-    int lastindexOf(int cp)
-    int 1astindexOf(int cp, int fromIndex )
+    int lastIndexOf(String str)
+    int lastIndexOf(String str, int fromIndex )
+    int lastIndexOf(int cp)
+    int lastIndexOf(int cp, int fromIndex )
     返回与字符串 str 或代码点 cp 匹配的最后一个子串的开始位置。 这个位置从原始串尾端或 fromIndex 开始‘从右往左’计算
     */
     System.out.println(str.lastIndexOf("l")); // print 3
